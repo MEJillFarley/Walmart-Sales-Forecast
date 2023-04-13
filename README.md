@@ -33,4 +33,4 @@ Data Source: https://www.kaggle.com/datasets/ujjwalchowdhury/walmartcleaned/disc
 
 -For our regression model based on Weekly sales and week of year, we filtered our cleaned data to pull from 2011 only, as it was our only complete year out of 2010, 2011, and 2012. We further filtered the data to pull instances just from one store for modeling purposes. 
 
--For our model based on Store size and weekly sales, we 
+-For our model based on Store size and weekly sales, we looked at all 45 stores and group by the size of the store.
