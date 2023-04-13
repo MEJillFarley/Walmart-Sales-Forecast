@@ -13,7 +13,7 @@ Data Source: https://www.kaggle.com/datasets/ujjwalchowdhury/walmartcleaned/disc
   | Weekly_Sales | Int  | Sum of sales over given week in dollars
   | Temperature        | Int  | Temperature in degree Celsius
   | Fuel_Price       | Int  | Cost of fuel in the region in dollars
-  | MarkDown(1-5)      | Int  | 
+  | MarkDown(1-5)      | Int  | Markdown event precede the four prominent holidays
   | CPI         | Int  | Prevailing consumer price index
   | Unemployment      | Int     | Prevailing unemployment rate
   | Type | Int  | Store labeled 1-3 based on size of store
