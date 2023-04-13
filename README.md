@@ -29,7 +29,8 @@ Data Source: https://www.kaggle.com/datasets/ujjwalchowdhury/walmartcleaned/disc
 
 -Used the 'dt.year' function to extract the year from the 'Date' values for usability purposes. 
 
-### Linear Regression Preprocessing
--For our linear regression model, we filtered our cleaned data to pull from 2011 only, as it was our only complete year out of 2010, 2011, and 2012.
+## Polynomial Regression Preprocessing
 
--We further filtered the data to pull instances just from one store for modeling purposes.
+-For our regression model based on Weekly sales and week of year, we filtered our cleaned data to pull from 2011 only, as it was our only complete year out of 2010, 2011, and 2012. We further filtered the data to pull instances just from one store for modeling purposes. 
+
+-For our model based on Store size and weekly sales, we 
