@@ -46,3 +46,16 @@ Data Source: https://www.kaggle.com/datasets/ujjwalchowdhury/walmartcleaned/disc
 </p>
 
 -We concluded that a polynomial regression model was not sufficient for our goal to predict Walmart sales. We decided to build a random forest model to see if we could more accurately predict sales. 
+
+------------------------
+# Machine Learning
+
+## RandomForest Regression Model
+
+-Our team chose to build a RandomForest Regression model do to it's ability to produce good predictions with large data sets.
+
+-Built the model to predict Weekly sales by Date (in weeks).
+
+-We manually split our training and testing data
+
+-Used Stand Scaler module to scale our data, and proceeded to build a RandomForest Regression with our training data.
