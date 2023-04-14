@@ -29,8 +29,14 @@ Data Source: https://www.kaggle.com/datasets/ujjwalchowdhury/walmartcleaned/disc
 
 -Used the 'dt.year' function to extract the year from the 'Date' values for usability purposes. 
 
-## Polynomial Regression Preprocessing
+## Polynomial Regression
 
--For our regression model based on Weekly sales and week of year, we filtered our cleaned data to pull from 2011 only, as it was our only complete year out of 2010, 2011, and 2012. We further filtered the data to pull instances just from one store for modeling purposes. 
+-For our model based on Store size and weekly sales, we looked at all 45 stores and grouped by the size of the store.
 
--For our model based on Store size and weekly sales, we looked at all 45 stores and group by the size of the store.
+-We began by creating a scatter plot comparing Size of the store to Weekly sales.
+
+-Based on the initial scatter plot, our data did not appear to be a good fit for a linear regression model, so we built a polynomial regression model.
+
+-We then used the SKlearn 'PolynomialFeatures' function to build the model and find our predicted y values. We found the best model had 3 degrees.
+
+-Our polynomial regression had an r^2 score of 0.65, meaning our models prediction of weekly sales by store size is 65% accurate.
