@@ -40,3 +40,7 @@ Data Source: https://www.kaggle.com/datasets/ujjwalchowdhury/walmartcleaned/disc
 -We then used the SKlearn 'PolynomialFeatures' function to build the model and find our predicted y values. We found the best model had 3 degrees.
 
 -Our polynomial regression had an r^2 score of 0.65, meaning our models prediction of weekly sales by store size is 65% accurate.
+
+<p align="center">
+  <img width=400px height=240px src="https://github.com/bexlev/project3/blob/main/images/map.png">
+</p>
