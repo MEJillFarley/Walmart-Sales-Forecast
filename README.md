@@ -39,8 +39,10 @@ Data Source: https://www.kaggle.com/datasets/ujjwalchowdhury/walmartcleaned/disc
 
 -We then used the SKlearn 'PolynomialFeatures' function to build the model and find our predicted y values. We found the best model had 3 degrees.
 
--Our polynomial regression had an r^2 score of 0.65, meaning our models prediction of weekly sales by store size is 65% accurate.
+-Our polynomial regression had an RMSE error of 49,269,168(USD) and an r^2 value of 0.65. This information tells us that our average error between our models predicted sales and acutal sales is roughly $50 million.  
 
 <p align="center">
   <img width=400px height=240px src="https://github.com/MEJillFarley/Walmart-Sales-Forecast/blob/4c48dbc3119464636761869eee79eae556a34a7d/Data%20Images/Screenshot%202023-04-13%20at%207.29.20%20PM.png">
 </p>
+
+-We concluded that a polynomial regression model was not sufficient for our goal to predict Walmart sales. We decided to build a random forest model to see if we could more accurately predict sales. 
