@@ -69,8 +69,20 @@ Data Source: https://www.kaggle.com/datasets/ujjwalchowdhury/walmartcleaned/disc
 - Review and tune to achieve cloase to 90% fitting (r^2 value of 0.8969 and RMSE about 1.76 million USD). A significant improvement in prediction from the model.
 
 #### Optimization
+- We started off with an initial r^2 score of .65 and about 50 million in variation.
+- Study indicated missing markdowns was the major cause and we were missing values from original dataset for almost all of 2010 and 2011. We decided to take the average per week and use it for all years.
+- This improved fitting to about 0.74
+- We then included close to holiday indicators for Easter, Thanksgiving and Christmas to bring it close to 80% fitting
+- Two different lags were then introduced as features. Previous week and then last 4 weeks.
+- We increased the number of trees and finally set to 1000 to come up with a good 0.89
 
 #### Final Prediction for all years using the model
 <p align="center">
-  <img width=400px height=240px src="https://github.com/MEJillFarley/Walmart-Sales-Forecast/blob/4c48dbc3119464636761869eee79eae556a34a7d/Data%20Images/Screenshot%202023-04-13%20at%207.29.20%20PM.png">
+  <img width=400px height=240px src="https://github.com/MEJillFarley/Walmart-Sales-Forecast/blob/main/Data%20Images/predictions_all.png">
 </p>
+
+#### Limitations
+- Location of the stores is not known and we have built the model with the assumption of all stores being in the same region.
+- Markdown data was missing for 2010 and most of 2011. We used the average of data that was present which left 0 values for week 44.
+- Markdowns are not the same each year and missing value for week 44 around pre-Thanksgiving is a major limitation.
+- A good history is required for time-series prediction but our dataset roughly covers about 2 years and 9 months for history.
